@@ -1,6 +1,9 @@
+import JsonWriterInstances._
+
 object test {
 
   def main(args: Array[String]): Unit = {
-    println("hello world")
+    val myJsonObject: Json = Json2.toJson(Person("john","john_smith@gmail.com"))
+    println(myJsonObject)
   }
 }
